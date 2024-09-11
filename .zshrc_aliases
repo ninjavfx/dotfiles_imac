@@ -1,0 +1,45 @@
+alias srcz='source ~/.zshrc'
+
+# Recursevily remove .DS_Store
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# # Disable Spotlight
+alias spotoff="sudo mdutil -a -i off"
+# # Enable Spotlight
+alias spoton="sudo mdutil -a -i on"
+#
+# #Print each PATH in a separate line
+alias path='echo -e ${PATH//:/\\n}'
+#
+alias c=clear
+alias h=history
+#
+# # Alias's for multiple directory listing commands
+alias la='ls -Alh'                # show hidden files
+alias ls='ls -aFh --color=always' # add colors and file type extensions
+alias lx='ls -lXBh'               # sort by extension
+alias lk='ls -lSrh'               # sort by size
+alias lc='ls -ltcrh'              # sort by change time
+alias lu='ls -lturh'              # sort by access time
+alias lr='ls -lRh'                # recursive ls
+alias lt='ls -ltrh'               # sort by date
+alias lm='ls -alh |more'          # pipe through 'more'
+alias lw='ls -xAh'                # wide listing format
+alias ll='ls -Fls'                # long listing format
+#
+alias da=date
+#
+alias x='chmod +x'
+#
+alias vi=nvim
+#
+#
+# #Marvel Aliases
+alias cda='cd /Volumes/ROC-VFX/VFX/workarea/_users/alongaro;lc'
+alias cde='cd /Volumes/ROC-VFX/VFX/postoffice/editorial/from_editorial;lc'
+alias cdd='cd /Volumes/ROC-VFX/VFX/postoffice/digital_domain/to_marvel;lc'
+alias cdw='cd /Volumes/ROC-VFX/VFX/postoffice/weta/to_marvel;lc'
+alias cdo='cd /Volumes/ROC-VFX/VFX/postoffice/outpost/to_marvel;lc'
+alias cdi='cd /Volumes/ROC-VFX/VFX/postoffice/inhouse/to_marvel;lc'
+alias cdm='cd /Volumes/ROC-VFX/VFX/vfx_prod/marketing;lc'
+alias shot='cd /Volumes/ROC-VFX/VFX/shottree;lc'
