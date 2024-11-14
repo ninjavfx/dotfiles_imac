@@ -19,6 +19,7 @@ setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
 
+#export TERM=xterm-kitty
 
 # completion using arrow keys (based on history)
 bindkey '^[[A' history-search-backward
@@ -66,3 +67,10 @@ source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Added by smash installer on Fri Oct  4 11:59:37 PDT 2024
+source ~/.profile
+export TERM=xterm-256color
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)

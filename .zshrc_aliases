@@ -43,3 +43,10 @@ alias cdo='cd /Volumes/ROC-VFX/VFX/postoffice/outpost/to_marvel;lc'
 alias cdi='cd /Volumes/ROC-VFX/VFX/postoffice/inhouse/to_marvel;lc'
 alias cdm='cd /Volumes/ROC-VFX/VFX/vfx_prod/marketing;lc'
 alias shot='cd /Volumes/ROC-VFX/VFX/shottree;lc'
+
+#AWS
+alias aws_connect='aws ssm start-session --target i-057c6163914a9059c --profile twds-marvel-studios-nonprod --region us-west-2'
+alias aws_start='aws ec2 start-instances --instance-ids i-057c6163914a9059c --profile twds-marvel-studios-nonprod --region us-west-2'
+alias aws_stop='aws ec2 stop-instances --instance-ids i-057c6163914a9059c --profile twds-marvel-studios-nonprod --region us-west-2'
+alias aws_status='aws ec2 describe-instance-status --instance-ids i-057c6163914a9059c --profile twds-marvel-studios-nonprod --region us-west-2'
+alias cdreel='cd /Volumes/ROC-VFX/VFX/postoffice/editorial/from_editorial/24-10-30_21-33-44.20500/20241030_ROC_REEL_EXPORTS/QTs'
